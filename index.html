@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Developer Survey Form</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <header class = "header">
+        <h1 id="title" class="center-text">Developer Survey Form</h1>
+        <p id="description" class="center-text"> Thank you for your participation!
+        </p>
+      </header>
+      
+      <form id="survey-form">
+       <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+          class="form-control"/>
+       </div>
+        
+        <div class="form-group">
+         <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required>
+        </div>
+          
+          <div class="form-group">
+           <label id="number-label" for="number">Years of Experience</label>
+            <input
+              type="number"
+              name="experience"
+              id="number"
+              min="0"
+              max="99"
+              class="form-control"
+              placeholder="Enter your years of Experience"
+             />
+            </div>
+          
+          <div class="form-group">
+            <p>What is your role at the moment?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value> Select your role</option>
+              <option value="front-end">Front End Developer</option>
+              <option value="back-end">Back End Developer</option>
+              <option value="Full-stack">Full Stack Developer</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <p>How do you like your role at the moment?</p>
+            <label>
+              <input
+                name="user-experience"
+                value="yes"
+                type="radio"
+                checked
+              />Yes</label>
+            <label>
+              <input
+                name="user-experience"
+                value="no"
+                type="radio"
+              />No</label>
+            <label>
+              <input
+                name="user-experience"
+                value="so-so"
+                type="radio"
+              />So-so</label>
+            
+            <div class="form-group">
+              <p> What other role are you interested in or would like to try?</p>
+              <label>
+                <input
+                  name="other-role"
+                  value="FE"
+                  type="checkbox"
+                       />Front-end</label>
+              <label>
+                <input
+                  name="other-role"
+                  value="BE"
+                  type="checkbox"
+                       />Back-end</label>
+              <label>
+                <input
+                  name="other-role"
+                  value="FS"
+                  type="checkbox"
+                       />Full Stack</label>
+              <label>
+                <input
+                  name="other-role"
+                  value="Data-science"
+                  type="checkbox"
+                       />Data Science</label>
+              <label>
+                <input
+                  name="other-role"
+                  value="mobile"
+                  type="checkbox"
+                       />Mobile</label>
+            </div>
+            
+            <div class="form-group">
+              <p>Additional feedback</p>
+              <textarea
+                id="feedback"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your feedback here"
+              ></textarea>
+            </div>
+            
+            <div class="form-group">
+              <button type="submit" id="submit" class="submit-button"> Submit </button>
+            </div>
+      </form>
+  </body>
+</html>
